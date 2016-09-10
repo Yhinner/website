@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Llama's World</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="event.js" ></script>
+</head>
+<script type="text/javascript">
+    function Pro(){
+        this.arr = ["llama1.jpg", "llama2.jpg", "llama3.jpg", "llama4.jpg", "llama5.jpg", "llama6.jpg", "llama7.jpg"];
+        this.pos = 0;
+    }
+
+    var ins = new Pro();
+
+    function nextImage() {
+        if (ins.pos == ins.arr.length - 1) {
+            ins.pos = 0;
+            //window.alert(ins.pos);
+        } else {
+            ins.pos = ins.pos + 1;
+        }
+        document.getElementById("banner").src = "../image/" + ins.arr[ins.pos];
+        //window.alert(ins.pos);
+    }
+
+    function start() {
+        setInterval(nextImage, 3000);
+    }
+</script>
+
+<body onload="start()" class="background" background="../image/bg3.jpg">
+<div class="NaviBar">
+    <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="facts.html">Interesting Facts</a></li>
+        <li><a href="funs.html">Fun stuffs</a></li>
+        <li><a href="author.html">About Author</a></li>
+    </ul>
+</div>
+<div style="display: block">
+    <h1 class="title" style="margin-top: 3em !important;">Introduction</h1>
+    <img id="banner" onload="start" src="../image/llama1.jpg"/>
+    <p>
+        <strong style="font-size: 1cm !important">Llama</strong> is a camelidae animal, originates from South Ameriaca. However, it has been domesticated for thousands of years.
+        So nowadays llamas can be found everywhere over the world.
+    </p>
+    <p>
+        It is mainly used for transportation because it is a strongly durable animal. In addition, it is a social animal
+        that llamas always live together as herds. Llamas' ears are "Banana" shaped. They are long and slightly curved
+        inward.
+    </p>
+</div>
+
+<div class="footer">
+    <hr>
+    <p>
+        618 Harley Drive, Apt 3, Columbus, OH 43202 | (218) 750 9090 | yin.428@buckeyemail.osu.edu
+    </p>
+
+</div>
+
+</body>
+</html>

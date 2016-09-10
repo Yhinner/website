@@ -1,0 +1,74 @@
+.introduction {
+    text-align: right;
+}
+.NaviBar{
+    width:100%;
+    background-color: #333;
+    position: absolute;
+    /*margin: 0;*/
+    top: 0 !important;
+    left: 0;
+    right: 0;
+}
+.NaviBar ul {
+    width:84%;
+    margin:0 8%;
+    list-style:none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.NaviBar li {
+    display: inline-block;
+
+}
+.NaviBar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.NaviBar li a:hover {
+    background-color: #111;
+}
+
+.main_img {
+    float: left;
+    width: 20%;
+    height: 30%;
+}
+
+#banner {
+    width: 25em;
+    height: 15em
+}
+
+.author_img {
+    float: right !important;
+    width: 40%;
+    height: 80%;
+}
+
+.footer {
+    margin-top:2em !important;
+    background-color: #333;
+    height:10em;
+    position: absolute;
+    bottom: -20em;
+    left: 0;
+    right: 0;
+}
+
+.footer p, hr {
+    color: white;
+    text-align: center;
+
+}
+.background {
+    background-image: url(../image/bg3.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
